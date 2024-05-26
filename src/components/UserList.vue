@@ -11,10 +11,12 @@
           rounded 
           shadow"
       >
-        <span class="text-lg">Name: {{ user.name }}
-        <br>Username: {{ user.username }}
+        <span class="text-lg">
+          Name: {{ user.name }}
         <br>
-        Email: {{ user.email }}</span>
+          Username: {{ user.username }}
+        <br>
+          Email: {{ user.email }}</span>
         <span class="text-lg"></span>
         <router-link :to="{ name: 'UserPosts', params: { id: user.id } }"
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
